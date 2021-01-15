@@ -22,3 +22,5 @@ try:
         r = requests.get(url)
         if r.status_code < 400:
             print("The url is available: " + url)
+except Exception as e:
+    print(str(e))
