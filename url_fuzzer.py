@@ -12,7 +12,7 @@ wordlist = []
 if args.p:
     with open(args.p) as f:
         for line in f:
-            wordlist += line
+            wordlist.append(line.replace("\n", ""))
 elif args.s:
     wordlist = args.s.split(";")
 
