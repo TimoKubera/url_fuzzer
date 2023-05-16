@@ -11,7 +11,7 @@ class Fuzzer():
                 for line in f:
                     self.wordlist.append(line.replace("\n", ""))
         elif self.args.s:
-            self.wordlist = args.s.split(";")
+            self.wordlist = self.args.s.split(";")
 
         try:
             for line in self.wordlist:
